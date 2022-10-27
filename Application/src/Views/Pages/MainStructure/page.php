@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-light text-dark">
     <div class="container">
         {{header}}
 
