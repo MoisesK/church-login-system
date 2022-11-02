@@ -4,21 +4,11 @@ namespace App\Util;
 
 class View
 {
-    private array $vars = [];
-
-    public function getVars()
-    {
-        return $this->vars;
-    }
-
-    private function setVars(array $vars = [])
-    {
-        $this->vars = $vars;
-    }
+    private static array $vars = [];
 
     public static function init(array $vars = [])
     {
-        self::setVars($vars);
+        self::$vars = $vars;
     }
 
     private static function getContentView($view): string

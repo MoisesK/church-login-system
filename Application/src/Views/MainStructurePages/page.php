@@ -1,11 +1,11 @@
-  <!-- adaptar para dinamica{{header}} -->
+{{header}}
 
 <body id="page-top">
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
 
-    <!-- {{content}} -->
+{{content}}
 
     
         </div>
@@ -15,4 +15,4 @@
         <script src="js/scripts.js"></script>
     </body>
 
-<!-- {{footer}} -->
+{{footer}}
