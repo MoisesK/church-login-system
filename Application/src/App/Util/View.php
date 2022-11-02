@@ -23,14 +23,14 @@ class View
 
     private static function getContentView($view): string
     {
-        $archive = __DIR__ . '/../../Views/' . $view.'.php';
+        $archive = __DIR__ . '/../../Views/' . $view . '.php';
         return file_exists($archive) ? file_get_contents($archive) : '';
     }
 
     public static function render($view, $vars = []): string
     {
         $contentView = self::getContentView($view);
-        
+
         $vars = array_merge(self::$vars, $vars);
 
         $keys = array_keys($vars);
@@ -39,6 +39,5 @@ class View
         }, $keys);
 
         return str_replace($keys, array_values($vars), $contentView);
-  }
-
+    }
 }
