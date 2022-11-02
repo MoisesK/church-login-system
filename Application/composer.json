@@ -2,7 +2,7 @@
     "name": "moises/church_login_system",
     "autoload": {
         "psr-4": {
-            "App\\": "App/"
+            "App\\": "src/"
         }
     },
     "require": {

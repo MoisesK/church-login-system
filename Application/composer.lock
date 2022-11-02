@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "c6562b459d8e4d440f56615e5989b158",
@@ -40,10 +40,6 @@
                 }
             ],
             "description": "A simple library for managing database connections, results pagination and building queries in PHP.",
-            "support": {
-                "issues": "https://github.com/william-costa/database-manager/issues",
-                "source": "https://github.com/william-costa/database-manager/tree/v0.1.0"
-            },
             "time": "2021-03-19T18:51:35+00:00"
         },
         {
@@ -80,10 +76,6 @@
                 }
             ],
             "description": "A simple library for managing environment variables in PHP.",
-            "support": {
-                "issues": "https://github.com/william-costa/dot-env/issues",
-                "source": "https://github.com/william-costa/dot-env/tree/v0.1.0"
-            },
             "time": "2021-03-19T19:28:14+00:00"
         }
     ],
@@ -154,11 +146,6 @@
                 "phpcs",
                 "standards"
             ],
-            "support": {
-                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
-                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
-                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
-            },
             "time": "2015-01-21T22:44:05+00:00"
         }
     ],
@@ -168,6 +155,5 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": []
 }

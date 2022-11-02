@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84
+class ComposerStaticInit8196af3f2d69dea197005def3038237b
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -29,12 +29,12 @@ class ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84
         ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/App',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
-        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'App\\Util\\View' => __DIR__ . '/../..' . '/src/App/Util/View.php',
         'Generic_Sniffs_Classes_DuplicateClassNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Classes/DuplicateClassNameSniff.php',
         'Generic_Sniffs_CodeAnalysis_EmptyStatementSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/EmptyStatementSniff.php',
         'Generic_Sniffs_CodeAnalysis_ForLoopShouldBeWhileLoopSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/ForLoopShouldBeWhileLoopSniff.php',
@@ -275,6 +275,9 @@ class ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84
         'Squiz_Sniffs_WhiteSpace_ScopeKeywordSpacingSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/WhiteSpace/ScopeKeywordSpacingSniff.php',
         'Squiz_Sniffs_WhiteSpace_SemicolonSpacingSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/WhiteSpace/SemicolonSpacingSniff.php',
         'Squiz_Sniffs_WhiteSpace_SuperfluousWhitespaceSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/WhiteSpace/SuperfluousWhitespaceSniff.php',
+        'WilliamCosta\\DatabaseManager\\Database' => __DIR__ . '/..' . '/william-costa/database-manager/src/Database.php',
+        'WilliamCosta\\DatabaseManager\\Pagination' => __DIR__ . '/..' . '/william-costa/database-manager/src/Pagination.php',
+        'WilliamCosta\\DotEnv\\Environment' => __DIR__ . '/..' . '/william-costa/dot-env/src/Environment.php',
         'Zend_Sniffs_Debug_CodeAnalyzerSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Zend/Sniffs/Debug/CodeAnalyzerSniff.php',
         'Zend_Sniffs_Files_ClosingTagSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Zend/Sniffs/Files/ClosingTagSniff.php',
         'Zend_Sniffs_NamingConventions_ValidVariableNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Zend/Sniffs/NamingConventions/ValidVariableNameSniff.php',
@@ -283,9 +286,9 @@ class ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit43fc4bc7ebb6a2049f92ab0d407eeb84::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8196af3f2d69dea197005def3038237b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8196af3f2d69dea197005def3038237b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8196af3f2d69dea197005def3038237b::$classMap;
 
         }, null, ClassLoader::class);
     }
