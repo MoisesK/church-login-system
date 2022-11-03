@@ -6,6 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controllers\\HomeController' => $baseDir . '/src/Controllers/HomeController.php',
+    'App\\Controllers\\PageGenericController' => $baseDir . '/src/App/Controllers/PageGenericController.php',
+    'App\\Routes\\Request' => $baseDir . '/src/App/Routes/Request.php',
+    'App\\Routes\\Response' => $baseDir . '/src/App/Routes/Response.php',
+    'App\\Routes\\Router' => $baseDir . '/src/App/Routes/Router.php',
     'App\\Util\\View' => $baseDir . '/src/App/Util/View.php',
     'Generic_Sniffs_Classes_DuplicateClassNameSniff' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Classes/DuplicateClassNameSniff.php',
     'Generic_Sniffs_CodeAnalysis_EmptyStatementSniff' => $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/EmptyStatementSniff.php',

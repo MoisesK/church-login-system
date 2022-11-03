@@ -11,10 +11,9 @@ class HomeController extends PageGenericController{
 	{
 		//Metodo que retornar o conteúdo(View) da PÁGINA HOME
 		$content = View::render('InternalsPages/home', [
-			"HomeName" => "Lista de Entregas",
-			"DescricaoPage" => "Visão geral de Entregas cadastradas!",
+			"teste" => "Lista de Entregas",
 		]);
 
-		return parent::getPage("Home > E2000", $content);
+		return parent::getPage("Home > 1ªIBTN", $content);
 	}
 }

@@ -20,3 +20,12 @@ define('URL', getenv('URL'));
 View::init([
     'URL' => URL
 ]);
+
+// Inicia o roteador
+$obRouter = new Router(URL);
+
+// Inclui as Rotas de Páginas
+include __DIR__ . '/../src/App/Routes/Pages.php';
+
+// Imprime as Páginas
+$obRouter->run()->sendResponse();

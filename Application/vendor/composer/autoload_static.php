@@ -34,6 +34,11 @@ class ComposerStaticInit8196af3f2d69dea197005def3038237b
     );
 
     public static $classMap = array (
+        'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/src/Controllers/HomeController.php',
+        'App\\Controllers\\PageGenericController' => __DIR__ . '/../..' . '/src/App/Controllers/PageGenericController.php',
+        'App\\Routes\\Request' => __DIR__ . '/../..' . '/src/App/Routes/Request.php',
+        'App\\Routes\\Response' => __DIR__ . '/../..' . '/src/App/Routes/Response.php',
+        'App\\Routes\\Router' => __DIR__ . '/../..' . '/src/App/Routes/Router.php',
         'App\\Util\\View' => __DIR__ . '/../..' . '/src/App/Util/View.php',
         'Generic_Sniffs_Classes_DuplicateClassNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Classes/DuplicateClassNameSniff.php',
         'Generic_Sniffs_CodeAnalysis_EmptyStatementSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/CodeAnalysis/EmptyStatementSniff.php',
